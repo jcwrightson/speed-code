@@ -68,13 +68,13 @@ def product_menu(products=[]):
         if sub_option == 1:
             view_products(products)
 
-        if sub_option == 2:
-            create_product(products)
+        # if sub_option == 2:
+        #     create_product(products)
 
-        if sub_option == 3:
-            update_product(products)
+        # if sub_option == 3:
+        #     update_product(products)
 
-        if sub_option == 4:
-            delete_product(products)
+        # if sub_option == 4:
+        #     delete_product(products)
 
     return products
