@@ -5,8 +5,8 @@ def test_get_country_code():
 
     test_countries = [
         {
-            'name': 'Test Country',
-            'alpha3Code': "TC"
+            "name": "Test Country",
+            "alpha3Code": "TC"
         }
     ]
 
@@ -24,8 +24,8 @@ def test_get_country_code_none():
 
     test_countries = [
         {
-            'name': 'Test Country',
-            'alpha3Code': "TC"
+            "name": "Test Country",
+            "alpha3Code": "TC"
         }
     ]
 
@@ -44,10 +44,10 @@ def test_transform():
     def mock_get_countries():
         return [
             {
-                'name': 'Test Country',
-                'alpha3Code': "TC",
-                'currencies': [
-                    {'code': 'TCP'}
+                "name": "Test Country",
+                "alpha3Code": "TC",
+                "currencies": [
+                    {"code": "TCP"}
                 ]
             }
         ]
