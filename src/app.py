@@ -60,3 +60,5 @@ def init():
 init()
 menu(products)
 save(products)
+
+
