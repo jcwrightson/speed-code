@@ -32,13 +32,13 @@ def create_product(products):
     return products
 
 
-def update_product(products):
+def update_product(products, view_products, save, input):
     view_products(products)
     idx = int(input("Select: "))
 
     for key in products[idx].keys():
-        update = input(f"{key}: ")
-        if update != "":
+        update = input(f"{key}: ") or None
+        if update:
             if key == "price":
                 products[idx][key] = float(update)
             else:
@@ -71,8 +71,8 @@ def product_menu(products=[]):
         # if sub_option == 2:
         #     create_product(products)
 
-        # if sub_option == 3:
-        #     update_product(products)
+        if sub_option == 3:
+            update_product(products, view_products, save, input)
 
         # if sub_option == 4:
         #     delete_product(products)
